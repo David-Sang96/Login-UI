@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Encode+Sans:wght@300;400;500;600;700&family=Kanit:ital,wght@0,400;1,500&family=Lato:wght@300&family=Martian+Mono:wght@500&family=Montserrat:wght@500&family=Open+Sans&family=Raleway:wght@500&family=Reggae+One&family=Roboto:wght@500&family=Rubik:wght@500&display=swap');
+
+@import "variable";
+@import "content";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+.main-container{
+  background-color: $lightBlack;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: min(90vw,100rem);
+  margin-inline: auto;
+  background-color: $White;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.success-container{
+  background-color: $lightBlack;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:768px){
+.container{
+  flex-direction: column;
+}
+.right-box__svg{
+  display: none;
+}
+}
